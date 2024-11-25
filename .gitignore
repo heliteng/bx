@@ -1,3 +1,6 @@
 node_modules/
 /test-results/
 
+.idea/
+docs/.vuepress/.cache
+docs/.vuepress/.temp
