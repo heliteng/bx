@@ -5,11 +5,11 @@ export default defineConfig({
   title: "易边学",
   description: "边玩边学，边工作边学习",
   themeConfig: {
-    // https://vitepress.dev/reference/default-theme-config
+    logo: '/images/logo.png',
     nav: [
-      { text: 'Home', link: '/' },
-      { text: 'Examples', link: '/markdown-examples' },
-      { text: '下载', link: '/page/download' }
+      { text: '首页', link: '/' },
+      //{ text: 'Examples', link: '/markdown-examples' },
+      { text: '下载', link: '/download' }
     ],
 
     sidebar: [

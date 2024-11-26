@@ -1,11 +1,11 @@
 ---
 # https://vitepress.dev/reference/default-theme-home-page
-layout: foo
+layout: home
 sidebar: false
 
 hero:
   name: "My Awesome Project"
-  text: "A VitePress Site"
+  text: ""
   tagline: My great project tagline
   actions:
     - theme: brand

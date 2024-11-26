@@ -3,15 +3,18 @@
 layout: home
 
 hero:
-  name: "My Awesome Project"
-  text: "A VitePress Site"
-  tagline: My great project tagline
+  name: "易边学"
+  text: ""
+  tagline: "让进步一直发生！"
+  image:
+    src: /images/logo.png
+    alt: "易边学"
   actions:
     - theme: brand
-      text: Markdown Examples
-      link: /markdown-examples
+      text: 下载安卓版
+      link: /download
     - theme: alt
-      text: API Examples
+      text: 了解更多
       link: /api-examples
 
 features:
