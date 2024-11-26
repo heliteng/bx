@@ -4,7 +4,7 @@ import type { Theme } from 'vitepress'
 import DefaultTheme from 'vitepress/theme'
 import './style.css'
 
-import Foo from './Test.vue'
+import Download from '../view/download.vue'
 
 export default {
   extends: DefaultTheme,
@@ -15,6 +15,6 @@ export default {
   },
   enhanceApp({ app, router, siteData }) {
     // ...
-    app.component('foo',Foo)
+    app.component('download',Download)
   }
 } satisfies Theme
