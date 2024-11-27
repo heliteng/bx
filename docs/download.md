@@ -1,26 +1,23 @@
 ---
 # https://vitepress.dev/reference/default-theme-home-page
-layout: home
 sidebar: false
+outline: false
+title: 易边学-下载
+layout: home
 
 hero:
-  name: "My Awesome Project"
+  name: "易边学安卓版"
   text: ""
-  tagline: My great project tagline
+  tagline: "点击下面按钮下载最新版本"
+  image:
+    src: /images/to_download_page2.png
+    alt: "易边学"
   actions:
     - theme: brand
-      text: Markdown Examples
-      link: /markdown-examples
-    - theme: alt
-      text: API Examples
-      link: /api-examples
+      text: 立即下载
+      link: http://182.42.152.143:8000/word/version/download/android
 
-features:
-  - title: Feature A
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature B
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature C
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
+
 ---
+
 

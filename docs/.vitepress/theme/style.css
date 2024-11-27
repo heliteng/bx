@@ -137,3 +137,8 @@
   --docsearch-primary-color: var(--vp-c-brand-1) !important;
 }
 
+/* 去除H2标题下的横线 */
+h2{
+  border-top: none;
+}
+
