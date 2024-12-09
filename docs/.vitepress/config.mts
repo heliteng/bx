@@ -9,7 +9,8 @@ export default defineConfig({
     nav: [
       { text: '首页', link: '/' },
       //{ text: 'Examples', link: '/markdown-examples' },
-      { text: '下载', link: '/download' }
+      { text: '下载', link: '/download' },
+      { text: '联系我', link: '/contact' }
     ],
 
     sidebar: [

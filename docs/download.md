@@ -14,7 +14,7 @@ hero:
     alt: "易边学"
   actions:
     - theme: brand
-      text: 立即下载
+      text: " 点击立即下载 "
       link: http://182.42.152.143:8000/word/version/download/android
 
 
