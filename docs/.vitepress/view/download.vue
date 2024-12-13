@@ -1,3 +1,44 @@
+
+
+<template>
+
+  <div :class="{'center-box':isMobile}">
+    
+    <div v-if="isWeChat">
+      <div>微信无法下载文件，请复制链接到浏览器打开！</div>
+      <div>下载地址：https://oaak.netlify.app/download.html</div>
+      <span style="margin-left: 0px;margin-top: 20px" class="VPButton medium brand button-v1"
+          rel="noreferrer" ref="myButton"  @click="copyTextToClipboard('https://oaak.netlify.app/download.html')"> 复制下载链接 </span>
+      </div>
+
+    <span v-if="!isWeChat"  class="VPButton medium brand button-v1"
+          rel="noreferrer" @click="download()"> 点击立即下载 </span>
+
+  </div>
+
+</template>
+
+<style scoped>
+.center-box {
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+}
+
+.button-v1{
+  border-color: var(--vp-button-brand-border);
+  color: var(--vp-button-brand-text);
+  background-color: var(--vp-button-brand-bg);
+  border-radius: 20px;
+  padding: 8px 20px;
+  line-height: 38px;
+  font-size: 14px;
+
+}
+</style>
+
 <script setup>
 var isWeChat = false;
 var isMobile = false;
@@ -44,7 +85,7 @@ function copyTextToClipboard(text) {
         setTimeout(() => {
           copyTextToClipboard(text)
         },300)
-        
+
       });
 }
 
@@ -53,57 +94,21 @@ isMobile = checkIsMobile()
 if (isWeixinBrowser()) {
   isWeChat = true
   // 在微信浏览器中，使用window.location.href进行页面跳转
-  if (confirm('请复制链接到浏览器下载易边学APP')) {
+  /*if (confirm('请复制链接到浏览器下载易边学APP')) {
     copyTextToClipboard("https://oaak.netlify.app/download.html")
-    //alert("复制成功")
-    // 用户单击了确定按钮+
   } else {
-    // 用户单击了取消按钮
-    //alert("点击了取消按钮")
-  }
+  }*/
 
 } else {
   isWeChat = false
   // 在非微信浏览器中，使用window.open进行页面跳转
   // download();
 }
+
+import { onMounted, ref } from 'vue';
+const myButton = ref(null);
+
+onMounted(() => {
+  myButton.value.click(); // 模拟点击按钮
+});
 </script>
-
-<template>
-
-  <div :class="{'center-box':isMobile}">
-    
-    <div v-if="isWeChat">
-      <div>微信无法下载文件，请复制链接到浏览器打开！</div>
-      <div>下载地址：https://oaak.netlify.app/download.html</div>
-      <span style="margin-left: 0px;margin-top: 20px" class="VPButton medium brand button-v1"
-          rel="noreferrer" @click="copyTextToClipboard('https://oaak.netlify.app/download.html')"> 复制下载链接 </span>
-      </div>
-
-    <span v-if="!isWeChat"  class="VPButton medium brand button-v1"
-          rel="noreferrer" @click="download()"> 点击立即下载 </span>
-
-  </div>
-
-</template>
-
-<style scoped>
-.center-box {
-  text-align: center;
-}
-
-a {
-  text-decoration: none;
-}
-
-.button-v1{
-  border-color: var(--vp-button-brand-border);
-  color: var(--vp-button-brand-text);
-  background-color: var(--vp-button-brand-bg);
-  border-radius: 20px;
-  padding: 8px 20px;
-  line-height: 38px;
-  font-size: 14px;
-
-}
-</style>
