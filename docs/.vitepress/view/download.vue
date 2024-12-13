@@ -41,9 +41,10 @@ function copyTextToClipboard(text) {
         alert("复制成功！")
       })
       .catch(err => {
-        setTimeout(function (){
+        setTimeout(() => {
           copyTextToClipboard(text)
         },300)
+        
       });
 }
 
@@ -73,9 +74,10 @@ if (isWeixinBrowser()) {
   <div :class="{'center-box':isMobile}">
     
     <div v-if="isWeChat">
+      <div>微信无法下载文件，请复制链接到浏览器打开！</div>
       <div>下载地址：https://oaak.netlify.app/download.html</div>
       <span style="margin-left: 0px;margin-top: 20px" class="VPButton medium brand button-v1"
-          rel="noreferrer" @click="copyTextToClipboard('https://oaak.netlify.app/download.html')"> 微信无法下载，请点击这里复制链接到浏览器下载。 </span>
+          rel="noreferrer" @click="copyTextToClipboard('https://oaak.netlify.app/download.html')"> 复制下载链接 </span>
       </div>
 
     <span v-if="!isWeChat"  class="VPButton medium brand button-v1"
