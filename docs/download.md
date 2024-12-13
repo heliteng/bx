@@ -20,4 +20,12 @@ hero:
 
 ---
 
+<script setup>
+import Download from '.vitepress/view/download.vue'
+</script>
+## 下载
+
+[//]: # (![Alt]&#40;./images/to_download_page.png&#41;)
+<Download />
+
 

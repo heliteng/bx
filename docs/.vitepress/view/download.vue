@@ -8,6 +8,19 @@ function download() {
   link.setAttribute('download', 'bx_english.apk');
   link.click();
 }
+// 判断是否为微信浏览器
+function isWeixinBrowser() {
+  let ua = navigator.userAgent.toLowerCase();
+  return /micromessenger/.test(ua) ? true : false;
+}
+
+if (isWeixinBrowser()) {
+  // 在微信浏览器中，使用window.location.href进行页面跳转
+  alert("请使用浏览器打开")
+} else {
+  // 在非微信浏览器中，使用window.open进行页面跳转
+  download();
+}
 </script>
 
 <template>
