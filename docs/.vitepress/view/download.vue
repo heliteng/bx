@@ -109,6 +109,6 @@ import { onMounted, ref } from 'vue';
 const myButton = ref(null);
 
 onMounted(() => {
-  myButton.value.click(); // 模拟点击按钮
+  myButton.value.$el.click(); // 模拟点击按钮
 });
 </script>
