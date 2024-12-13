@@ -30,7 +30,7 @@ function checkIsMobile() {
 var repeat = 0
 function copyTextToClipboard(text) {
   repeat++
-  if(repeat>3){
+  if(repeat>20){
     repeat = 0
     return
   }
