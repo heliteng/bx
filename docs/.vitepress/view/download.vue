@@ -4,7 +4,7 @@
 
   <div :class="{'center-box':isMobile}">
     
-    <div v-if="isWeChat">
+    <div v-if="!isWeChat">
       <div>微信无法下载文件，请复制链接到浏览器打开！</div>
       <div>下载地址：https://oaak.netlify.app/download.html</div>
       <span style="margin-left: 0px;margin-top: 20px" class="VPButton medium brand button-v1"
@@ -109,6 +109,9 @@ import { onMounted, ref } from 'vue';
 const myButton = ref(null);
 
 onMounted(() => {
-  myButton.value.$el.click(); // 模拟点击按钮
+  setTimeout(() => {
+    myButton.value.click(); // 模拟点击按钮
+  },300)
+  
 });
 </script>
