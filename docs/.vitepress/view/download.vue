@@ -18,8 +18,14 @@ function isWeixinBrowser() {
 }
 
 function checkIsMobile() {
-  const userAgent = navigator.userAgent || navigator.vendor || window.opera;
-  return /android|webos|iphone|ipad|ipod|blackberry|iemobile|opera mini/i.test(userAgent);
+  return (
+      typeof window.orientation !== "undefined" || // 判断是否存在window.orientation属性，此属性在移动设备上一般存在
+      navigator.userAgent.indexOf('IEMobile') !== -1 || // 判断是否为Windows Phone
+      navigator.userAgent.indexOf('iPhone') !== -1 || // 判断是否为iPhone
+      navigator.userAgent.indexOf('Android') !== -1 && navigator.userAgent.indexOf('Mobile') !== -1 || // 判断是否为Android手机
+      navigator.userAgent.indexOf('BlackBerry') !== -1 || // 判断是否为BlackBerry
+      navigator.userAgent.indexOf('Opera Mini') !== -1 // 判断是否为Opera Mini浏览器
+  );
 }
 
 function copyTextToClipboard(text) {
@@ -62,11 +68,11 @@ if (isWeixinBrowser()) {
     
     <div v-if="isWeChat">
       <div>下载地址：https://oaak.netlify.app/download.html</div>
-      <span data-v-2dba8ca9="" data-v-72cc4481="" style="margin-left: 0px;margin-top: 20px" class="VPButton medium brand"
+      <span style="margin-left: 0px;margin-top: 20px" class="VPButton medium brand button-v1"
           rel="noreferrer" @click="copyTextToClipboard('https://oaak.netlify.app/download.html')"> 微信无法下载，请点击这里复制链接到浏览器下载。 </span>
       </div>
 
-    <span v-if="!isWeChat" data-v-2dba8ca9=""  data-v-72cc4481="" class="VPButton medium brand"
+    <span v-if="!isWeChat"  class="VPButton medium brand button-v1"
           rel="noreferrer" @click="download()"> 点击立即下载 </span>
 
   </div>
@@ -80,5 +86,16 @@ if (isWeixinBrowser()) {
 
 a {
   text-decoration: none;
+}
+
+.button-v1{
+  border-color: var(--vp-button-brand-border);
+  color: var(--vp-button-brand-text);
+  background-color: var(--vp-button-brand-bg);
+  border-radius: 20px;
+  padding: 8px 20px;
+  line-height: 38px;
+  font-size: 14px;
+
 }
 </style>
