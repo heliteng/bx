@@ -1,5 +1,6 @@
 <script setup>
 var isWeChat = false;
+var isMobile = false;
 
 function download() {
   const fileUrl = 'http://182.42.152.143:8000/word/version/download/android'; // 文件的URL地址
@@ -16,15 +17,35 @@ function isWeixinBrowser() {
   return /micromessenger/.test(ua) ? true : false;
 }
 
+function checkIsMobile() {
+  const userAgent = navigator.userAgent || navigator.vendor || window.opera;
+  return /android|webos|iphone|ipad|ipod|blackberry|iemobile|opera mini/i.test(userAgent);
+}
+
+function copyTextToClipboard(text) {
+  navigator.clipboard.writeText(text)
+      .then(() => {
+        console.log('Text copied to clipboard');
+        alert("复制成功！")
+      })
+      .catch(err => {
+        console.error('Error in copying text: ', err);
+        alert("复制失败！")
+      });
+}
+
+isMobile = checkIsMobile()
+
 if (isWeixinBrowser()) {
   isWeChat = true
   // 在微信浏览器中，使用window.location.href进行页面跳转
-  if (confirm('确定要继续吗？')) {
-    alert("点击了确定")
-   // 用户单击了确定按钮
+  if (confirm('请复制链接到浏览器下载易边学APP')) {
+    copyTextToClipboard("https://oaak.netlify.app/download.html")
+    //alert("复制成功")
+    // 用户单击了确定按钮+
   } else {
-   // 用户单击了取消按钮
-    alert("点击了取消按钮")
+    // 用户单击了取消按钮
+    //alert("点击了取消按钮")
   }
 
 } else {
@@ -35,15 +56,25 @@ if (isWeixinBrowser()) {
 </script>
 
 <template>
-  <div class="download-box">
-    <span v-if="!isWeChat" data-v-2dba8ca9="" data-v-72cc4481="" class="VPButton medium brand"
-          rel="noreferrer"> 点击立即下载 </span>
+
+
+  <div :class="{'center-box':isMobile}">
+    
+    <div v-if="isWeChat">
+      <div>下载地址：https://oaak.netlify.app/download.html</div>
+      <span data-v-2dba8ca9="" data-v-72cc4481="" style="margin-left: 0px;margin-top: 20px" class="VPButton medium brand"
+          rel="noreferrer" @click="copyTextToClipboard('https://oaak.netlify.app/download.html')"> 微信无法下载，请点击这里复制链接到浏览器下载。 </span>
+      </div>
+
+    <span v-if="!isWeChat" data-v-2dba8ca9=""  data-v-72cc4481="" class="VPButton medium brand"
+          rel="noreferrer" @click="download()"> 点击立即下载 </span>
+
   </div>
 
 </template>
 
 <style scoped>
-.download-box {
+.center-box {
   text-align: center;
 }
 
