@@ -27,16 +27,23 @@ function checkIsMobile() {
       navigator.userAgent.indexOf('Opera Mini') !== -1 // 判断是否为Opera Mini浏览器
   );
 }
-
+var repeat = 0
 function copyTextToClipboard(text) {
+  repeat++
+  if(repeat>3){
+    repeat = 0
+    return
+  }
   navigator.clipboard.writeText(text)
       .then(() => {
+        repeat =0
         console.log('Text copied to clipboard');
         alert("复制成功！")
       })
       .catch(err => {
-        console.error('Error in copying text: ', err);
-        alert("复制失败！")
+        setTimeout(function (){
+          copyTextToClipboard(text)
+        },300)
       });
 }
 
