@@ -63,7 +63,6 @@ if (isWeixinBrowser()) {
 
 <template>
 
-
   <div :class="{'center-box':isMobile}">
     
     <div v-if="isWeChat">
