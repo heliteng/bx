@@ -6,7 +6,7 @@ title: 易边学-下载
 layout: home
 
 hero:
-  name: "易边学安卓版"
+  #name: "易边学安卓版"
   text: ""
   tagline: ""
   image:

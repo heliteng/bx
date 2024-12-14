@@ -1,8 +1,14 @@
 
 
 <template>
+  
+  <div style="position: fixed;background: #000000;height: 100%;width: 100%;top: 0;left: 0;opacity: 0.85">
+  </div>
+  <img src="/images/open_browser.png" style="position: fixed;height: auto;width: 100%;top: 0;left: 0;"/>
 
   <div :class="{'center-box':isMobile}">
+    
+    
     
     <div v-if="isWeChat">
       <div>微信无法下载文件，请复制链接到浏览器打开！</div>
