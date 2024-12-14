@@ -1,6 +1,8 @@
 ---
 # https://vitepress.dev/reference/default-theme-home-page
 layout: home
+title: 首页
+description: '易边学，一边玩一边学，少儿守护，边学英语，边玩边学，快乐学习'
 
 hero:
   name: "易边学"

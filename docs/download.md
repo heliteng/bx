@@ -2,7 +2,8 @@
 # https://vitepress.dev/reference/default-theme-home-page
 sidebar: false
 outline: false
-title: 易边学-下载
+title: APP下载
+description: '易边学APP安卓版下载'
 layout: home
 
 hero:
