@@ -1,23 +1,20 @@
-
-
 <template>
-  
-  <div style="position: fixed;background: #000000;height: 100%;width: 100%;top: 0;left: 0;opacity: 0.85">
+  <div v-if="isWeChat">
+    <div style="position: fixed;background: #000000;height: 100%;width: 100%;top: 0;left: 0;opacity: 0.85">
+    </div>
+    <img src="/images/open_browser.png" style="position: fixed;height: auto;width: 100%;top: 0;left: 0;"/>
   </div>
-  <img src="/images/open_browser.png" style="position: fixed;height: auto;width: 100%;top: 0;left: 0;"/>
 
   <div :class="{'center-box':isMobile}">
-    
-    
-    
     <div v-if="isWeChat">
       <div>微信无法下载文件，请复制链接到浏览器打开！</div>
       <div>下载地址：https://oaak.netlify.app/download.html</div>
       <span style="margin-left: 0px;margin-top: 20px" class="VPButton medium brand button-v1"
-          rel="noreferrer" id="myButton" ref="myButton"  @click="copyTextToClipboard('https://oaak.netlify.app/download.html')"> 复制下载链接 </span>
-      </div>
+            rel="noreferrer" id="myButton" ref="myButton"
+            @click="copyTextToClipboard('https://oaak.netlify.app/download.html')"> 复制下载链接 </span>
+    </div>
 
-    <span v-if="!isWeChat"  class="VPButton medium brand button-v1"
+    <span v-if="!isWeChat" class="VPButton medium brand button-v1"
           rel="noreferrer" @click="download()"> 点击立即下载 </span>
 
   </div>
@@ -33,7 +30,7 @@ a {
   text-decoration: none;
 }
 
-.button-v1{
+.button-v1 {
   border-color: var(--vp-button-brand-border);
   color: var(--vp-button-brand-text);
   background-color: var(--vp-button-brand-bg);
@@ -74,24 +71,26 @@ function checkIsMobile() {
       navigator.userAgent.indexOf('Opera Mini') !== -1 // 判断是否为Opera Mini浏览器
   );
 }
+
 var repeat = 0
+
 function copyTextToClipboard(text) {
   repeat++
-  if(repeat>20){
+  if (repeat > 20) {
     repeat = 0
     return
   }
   navigator.clipboard.writeText(text)
       .then(() => {
-        repeat =0
+        repeat = 0
         console.log('Text copied to clipboard');
         alert("复制成功！")
       })
       .catch(err => {
-        console.log('复制失败:'+repeat);
+        console.log('复制失败:' + repeat);
         setTimeout(() => {
           copyTextToClipboard(text)
-        },300)
+        }, 300)
 
       });
 }
@@ -111,11 +110,5 @@ if (isWeixinBrowser()) {
   // 在非微信浏览器中，使用window.open进行页面跳转
   // download();
 }
-
-import { onMounted } from 'vue';
-onMounted(() => {
-  // 页面加载后执行的函数
-  copyTextToClipboard("https://oaak.netlify.app/download.html");
-});
 
 </script>
