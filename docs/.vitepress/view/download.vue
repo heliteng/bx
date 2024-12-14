@@ -35,7 +35,7 @@ a {
   color: var(--vp-button-brand-text);
   background-color: var(--vp-button-brand-bg);
   border-radius: 20px;
-  padding: 8px 20px;
+  padding: 12px 20px;
   line-height: 38px;
   font-size: 14px;
 
