@@ -8,7 +8,7 @@
       <div>微信无法下载文件，请复制链接到浏览器打开！</div>
       <div>下载地址：https://oaak.netlify.app/download.html</div>
       <span style="margin-left: 0px;margin-top: 20px" class="VPButton medium brand button-v1"
-          rel="noreferrer" ref="myButton"  @click="copyTextToClipboard('https://oaak.netlify.app/download.html')"> 复制下载链接 </span>
+          rel="noreferrer" id="myButton" ref="myButton"  @click="copyTextToClipboard('https://oaak.netlify.app/download.html')"> 复制下载链接 </span>
       </div>
 
     <span v-if="!isWeChat"  class="VPButton medium brand button-v1"
@@ -82,6 +82,7 @@ function copyTextToClipboard(text) {
         alert("复制成功！")
       })
       .catch(err => {
+        console.log('复制失败:'+repeat);
         setTimeout(() => {
           copyTextToClipboard(text)
         },300)
@@ -105,13 +106,10 @@ if (isWeixinBrowser()) {
   // download();
 }
 
-import { onMounted, ref } from 'vue';
-const myButton = ref(null);
-
+import { onMounted } from 'vue';
 onMounted(() => {
-  setTimeout(() => {
-    myButton.value.click(); // 模拟点击按钮
-  },300)
-  
+  // 页面加载后执行的函数
+  copyTextToClipboard("https://oaak.netlify.app/download.html");
 });
+
 </script>
