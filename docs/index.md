@@ -14,17 +14,19 @@ hero:
   actions:
     - theme: brand
       text: 下载安卓版
-      link: /download
-    - theme: alt
-      text: 了解更多
-      link: /api-examples
+      link: http://182.42.152.143:8000/word/version/download/android
+#    - theme: alt
+#      text: 了解更多
+#      link: /api-examples
 
 features:
-  - title: Feature A
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature B
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature C
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
+  - title: 英语
+    details: 多种方式学英语，总有一种适合你。包括随身听、悬浮窗、锁屏单词、桌面小组件、自然拼读、看英文影视实时语音识别提取词、图片理解、语法分析等。
+  - title: 少儿守护
+    details: 多方位守护您的孩子，从限制使用应用、观看内容、使用时间、科学用眼预防近视、儿童识字、学习知识等方面引导孩子合理使用手机，防止孩子沉迷手机。
+  - title: 日程、课程表
+    details: 安排待办事项，掌控时间，时间，为我所用；学生上课离不开课程表，做好预习，成绩更上一层楼。
+  - title: 股票
+    details: 实时显示关注的股票价格信息，时刻掌握市场动向。
 ---
 

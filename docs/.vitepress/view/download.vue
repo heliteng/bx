@@ -38,7 +38,7 @@ a {
   padding: 12px 20px;
   line-height: 38px;
   font-size: 14px;
-
+  cursor: pointer;
 }
 </style>
 
