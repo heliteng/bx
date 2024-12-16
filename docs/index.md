@@ -9,7 +9,7 @@ hero:
   text: ""
   tagline: "让进步一直发生！"
   image:
-    src: /images/logo.png
+    src: /images/app_ad_01.png
     alt: "易边学"
   actions:
     - theme: brand
