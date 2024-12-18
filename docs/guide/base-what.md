@@ -17,4 +17,14 @@
 易边学使用防沉迷设计，限制孩子使用手机时间，到时间后无法使用，APP还实时检测孩子用眼情况，发现眼睛距离手机太近时，
 会进行提示并遮挡屏幕，频繁近距离观看手机时，手机界面将黑屏无法观看，起到预防近视的目的。
 
+![app 界面](/images/intro/01-home.png)
+
+![app 界面](/images/intro/02-word.png)
+
+![app 界面](/images/intro/03-guard-config.png)
+
+![app 界面](/images/intro/04-guard-resource.png)
+
+![app 界面](/images/intro/05-guard-video.png)
+
 
