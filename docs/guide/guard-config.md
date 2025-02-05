@@ -19,4 +19,6 @@
 
 ### 应用自启动
 
+![app 界面](/images/guard/guard_config_autostart_1.png)
+
 ## 2.严格模式

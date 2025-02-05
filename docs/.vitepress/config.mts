@@ -44,7 +44,12 @@ export default defineConfig({
                 text: '少儿守护',
                 collapsed: true,
                 items: [
-                    {text: '守护配置', link: '/guide/guard-config.html'},
+                    {text: '守护配置', link: '/guide/guard-config.html',
+                        items:[
+                            {text: '自启动', link: '/guide/guard-config-autostart.html'},
+                        ]
+                    
+                    },
                     {text: '资源中心', link: '/guide/base-what.html'},
                     {text: '语音搜索', link: '/guide/base-what.html'}
                 ]
