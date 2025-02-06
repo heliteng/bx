@@ -19,6 +19,10 @@
 
 ### 应用自启动
 
-![app 界面](/images/guard/guard_config_autostart_1.png)
+- [通用设置方法](/guide/guard/guard-config-autostart)
+- [华为手机](/guide/guard/autostart-huawei)
+- [OPPO/一加手机](/guide/guard/autostart-OPPO-OnePlus)
+- [VIVO手机](/guide/guard/autostart-VIVO)
+- [小米手机](/guide/guard/autostart-xiaomi)
 
 ## 2.严格模式
