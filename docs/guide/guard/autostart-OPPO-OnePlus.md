@@ -9,7 +9,7 @@
 
 ## 操作步骤
 
-设置-电池-易边学-启动管理，关闭`自动管理`开关，把`允许自启动`和`允许后台活动`开关打开。
+长按“易边学”应用图标，弹出的菜单点击`应用详情`，选择“耗电管理”，，把`允许应用自启动`开关打开。
 
 ## 操作演示
 <video src="/images/guard/guard_oppo_oneplus.mp4" autoplay="true" controls="controls" width="800" height="600">
