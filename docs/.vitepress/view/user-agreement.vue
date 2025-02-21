@@ -6,13 +6,13 @@
 
   <div class="box">
 
-    <p align=center ><b style='font-weight: bold;font-size: 30pt'>   用户协议</b><b style='mso-bidi-font-weight:
+    <p align=center ><b style='font-weight: bold;font-size: 26pt'> 用户协议  </b><b style='mso-bidi-font-weight:
 		normal'><span lang=EN-US style='font-size:16.0pt;line-height:150%;font-family:
 		宋体;mso-bidi-font-family:宋体;background:white'></span></b></p>
 
     <p class=MsoNormal align=right style='margin-right:5.25pt;mso-para-margin-right:
 		.5gd;text-align:right;text-indent:21.0pt;mso-char-indent-count:1.75;line-height:
-		150%'><span style='font-size:12.0pt;line-height:150%;font-family:宋体;mso-bidi-font-family:
+		150%;margin-top: 40px'><span style='font-size:12.0pt;line-height:150%;font-family:宋体;mso-bidi-font-family:
 		宋体;mso-font-kerning:0pt;mso-bidi-language:AR;mso-bidi-font-weight:bold'>更新日期：<span
         lang=EN-US>2025</span>年<span lang=EN-US>2</span>月<span lang=EN-US>12</span>日<span
         lang=EN-US></span></span></p>
@@ -106,7 +106,11 @@
   </div>
 
 </template>
-
+<style>
+.VPLocalNav{
+  display: none !important;
+}
+</style>
 <style scoped>
 * {
   color: #000000;

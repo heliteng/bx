@@ -6,7 +6,7 @@
 
   <div class="box">
 
-    <p style="font-size: 30px;font-weight: bold;text-align: center;margin-top: 50px;margin-bottom: 40px">隐私政策</p>
+    <p style="font-size: 30px;font-weight: bold;text-align: center;margin-top: 30px;margin-bottom: 40px">隐私政策</p>
 
     <p class=MsoNormal align=right style='margin-right:5.25pt;mso-para-margin-right:
 		.5gd;text-align:right;text-indent:21.0pt;mso-char-indent-count:1.75;line-height:
@@ -767,11 +767,16 @@
   </div>
 
 </template>
-
+<style>
+.VPLocalNav{
+  display: none !important;
+}
+</style>
 <style scoped>
 * {
   color: #000000;
 }
+
 .box{
   padding: 50px 10px 50px 10px;
 }

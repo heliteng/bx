@@ -142,3 +142,7 @@ h2{
   border-top: none;
 }
 
+.VPSwitchAppearance + .VPNavScreenAppearance + .VPNavScreenSocialLinks + .back-to-top {
+  display: none !important;
+}
+
