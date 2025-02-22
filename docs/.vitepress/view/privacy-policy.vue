@@ -684,7 +684,24 @@
     <p style='margin-top:15.0pt;margin-right:0cm;margin-bottom:6.0pt;margin-left:
 		0cm;line-height:150%;mso-pagination:widow-orphan;background:white'><b
         style='mso-bidi-font-weight:normal'><span style='font-family:宋体;mso-bidi-font-family:
-		宋体;color:black;mso-color-alt:windowtext;background:white'>六、您的个人信息如何在全球范围转移</span></b><b
+		宋体;color:black;mso-color-alt:windowtext;background:white'>六、账户注销</span></b><b
+        style='mso-bidi-font-weight:normal'><span lang=EN-US style='font-family:宋体;
+		mso-bidi-font-family:宋体'></span></b></p>
+
+    <p style='text-indent:21.0pt;line-height:150%;mso-pagination:widow-orphan;
+		background:white'><span style='font-family:宋体;mso-bidi-font-family:宋体;
+		color:black;mso-color-alt:windowtext;background:white'>
+      您可以通过路径:“易边学-主页-用户图标-用户中心-账号注销”注销您的易边学账号。
+      在您注销易边学账号后，我们将停止为您提供易边学的服务，
+      并依据法律法规相关要求通过匿名化的方式处理您的个人信息，或删除与您账号相关的个人信息，但法律法规或监管机构对用户信息存储时间另有规定的除外。
+      
+    </span><span
+        lang=EN-US style='font-family:宋体;mso-bidi-font-family:宋体'></span></p>
+
+    <p style='margin-top:15.0pt;margin-right:0cm;margin-bottom:6.0pt;margin-left:
+		0cm;line-height:150%;mso-pagination:widow-orphan;background:white'><b
+        style='mso-bidi-font-weight:normal'><span style='font-family:宋体;mso-bidi-font-family:
+		宋体;color:black;mso-color-alt:windowtext;background:white'>七、您的个人信息如何在全球范围转移</span></b><b
         style='mso-bidi-font-weight:normal'><span lang=EN-US style='font-family:宋体;
 		mso-bidi-font-family:宋体'></span></b></p>
 
@@ -699,7 +716,7 @@
     <p style='margin-top:15.0pt;margin-right:0cm;margin-bottom:6.0pt;margin-left:
 		0cm;line-height:150%;mso-pagination:widow-orphan;background:white'><b
         style='mso-bidi-font-weight:normal'><span style='font-family:宋体;mso-bidi-font-family:
-		宋体;color:black;mso-color-alt:windowtext;background:white'>七、本政策如何更新</span></b><b
+		宋体;color:black;mso-color-alt:windowtext;background:white'>八、本政策如何更新</span></b><b
         style='mso-bidi-font-weight:normal'><span lang=EN-US style='font-family:宋体;
 		mso-bidi-font-family:宋体'></span></b></p>
 
@@ -753,7 +770,7 @@
     <p style='margin-top:15.0pt;margin-right:0cm;margin-bottom:6.0pt;margin-left:
 		0cm;line-height:150%;mso-pagination:widow-orphan;background:white'><b
         style='mso-bidi-font-weight:normal'><span style='font-family:宋体;mso-bidi-font-family:
-		宋体;color:black;mso-color-alt:windowtext;background:white'>八、如何联系我们</span></b><b
+		宋体;color:black;mso-color-alt:windowtext;background:white'>九、如何联系我们</span></b><b
         style='mso-bidi-font-weight:normal'><span lang=EN-US style='font-family:宋体;
 		mso-bidi-font-family:宋体'></span></b></p>
 
